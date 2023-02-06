@@ -1,3 +1,59 @@
-.abx {
+
+
+body{
+    margin: 10px;
+    padding: 50px 270px;
+    border: 2px solid red;
+    background-color: rgb(230, 228, 226);
+}
+
+.main-div{
+    border: 1px solid black;
+    padding: 10px;
+    /* width: 70%; */
+    /* display: flex; */
+
+    /* text-align: center; */
+    /* padding: 0px 10px; */
+}
+.picture{
+    width: 180px;
+}
+.img{
+    text-align: center;
+}
+.inline{
+    
     display: inline;
 }
+
+.abc{
+    font-weight: bold;
+    font-size: 2em;
+    background-color: blanchedalmond;
+    text-shadow: 5px 5px 10px black;
+    font-style: italic;
+    text-decoration: underline;
+}
+.bio{
+    display: flex;
+    align-items: baseline;
+    
+}
+.bio2{
+    display: flex;
+    align-items: baseline;
+    
+}
+.textArea{
+    padding-top: 16px;
+}
+.font-Styling{
+    font-size: 1.2em;
+    margin-bottom: 0px  ;
+}
+
+h2 {
+    text-shadow: 10px 3px 15px rgb(225, 124, 141);
+}
+

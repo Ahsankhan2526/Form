@@ -8,20 +8,100 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
-        <p class="abx" >User Name: <input type="text" name="username" size="15" placeholder="Capital letters" maxlength="30" minlength="5"> </p>
-        <p class="abx">Father Name: <input type="text" name="fathername" size="15" placeholder="Capital letters" maxlength="30" minlength="5"></p>
-        <p>Write your bio..... </p> <textarea name="userbio" id="user-bio" cols="40" rows="8" placeholder="write about you..... minimun words (100)" 
-        minlength="500" maxlength="1000"></textarea>
+    <div class="main-div">
+        
+       <fieldset> 
+        <legend class="abc">About yourself:</legend>
+        <div class="img">
+        <img src="./images/logo_saylaniwelfare.22bf709605809177256c.png" alt="logo" width="50%">
+        </div>
+        
+        
+        <form>
+        <label for="User-Name" class="abc inline" >User Name: </label>&nbsp&nbsp<input id="User-Name" type="text" name="username" size="15" placeholder="Capital letters" maxlength="30" minlength="5"> 
+       
+        &nbsp;&nbsp;&nbsp;&nbsp;  
+       
+        <p class="abc inline">Father Name: </p>&nbsp&nbsp<input type="text" name="fathername" size="15" placeholder="Capital letters" maxlength="30" minlength="5">
+        <input class="picture" type="file" name="picture" />
+        <input type="submit" name="submit" value="upload" />
+        <!-- <br /> -->
+        <br />
 
-        <p>Gender: <br />
-            <input type="radio" name="gender" value="male" ><b> Male</b>
-            <input type="radio" name="gender" value="female"><b>Female</b>
-            <input type="radio" name="gender" value="other"><b>Other</b>
+        <div class="bio">
+        <p class="abc inline" >Write your bio.....</p> &nbsp;&nbsp;&nbsp;&nbsp; <textarea class="textArea" name="userbio" id="user-bio" cols="40" rows="8" placeholder="write about you..... minimun words (100)" 
+        minlength="500" maxlength="1000"></textarea>
+        </div>
+        <!-- <br /> -->
+        <br />
+
+
+        <p class="abc inline">Gender: </p>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input  type="radio" name="gender" value="male" checked>  <label class="font-Styling"> Male</label>
+            <input  type="radio" name="gender" value="female"> <span class="font-Styling"> Female</span>
+            <input  type="radio" name="gender" value="other"> <span class="font-Styling"> Other</span>
+        </fieldset>
+       
+       
+        <br>
+        <br>
+        
+        <fieldset>
+            <legend>Login Details:</legend>
+        <p class="inline abc">Email address:</p>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" name="email" />
+            <input type="submit" name="subscribe" value="subscribe">
+        <br>
+        <br>
+        <p class="abc inline">Password: </p> &nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password" size="15" maxlength="30" minlength="10" required>
+        </fieldset>
+        
+        <br>
+        <br>
+    
+        <p class="abc inline">Select your desierd courses: </p>
+        
+        <p class="font-Styling ">
+            <input class="font-Styling" type="checkbox" name="desired courses" value="CCO" checked  > CCO
+            <input class="font-Styling" type="checkbox" name="desired courses" value="CCNA"> CCNA
+            <input class="font-Styling" type="checkbox" name="desired courses" value="Graphic Designing"> Graphic Designing
+            <input class="font-Styling" type="checkbox" name="desired courses" value="Web & Mobile"> Web & Mobile Application Development
         </p>
 
-        
-        <p>Password: <input type="password" name="password" size="15" maxlength="30" minlength="5"></p>
-    </form>
+
+
+        <div class="bio2">
+        <p class="inline abc">Select your Country:</p>&nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="Country" class="font-Styling" size="3" >
+            <option value="select country....." selected>Select country.....</option>
+            <option value="Madina" selected>Madina</option>
+            <option value="Makkah" >Makkah</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Iran">Iran</option>
+            <option value="Iran">Iraq</option>
+            <option value="Iran">Turkey</option>
+            <option value="Iran">Oman</option>
+        </select>
+        </div>
+
+
+        <button>Add</button>
+        <p>there is a hidden input below (Ref: Duckett pg no: 162)</p>
+        <input type="hidden" name="asd" value="Bookmarks" />
+
+
+
+        <label for="User-Name"> User Name:
+            <input id="User-Name" type="text" name="name" placeholder="Capital letters" /> 
+        </label>
+
+
+
+     </form>
+    
+    </div>
+    <h2>ahsan</h2>
+
+
 </body>
 </html>
